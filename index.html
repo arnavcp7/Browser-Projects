@@ -1,35 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Weather App</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIRA</title>
 </head>
-<body class="text-center">
-    <main>
-        <h1 class="banner p-3">Weather</h1>
-        <div class="form-group">
-            <input id="city-input" class="form-control form-control-lg" type="text" placeholder="Search city">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css">
+<body>
+    <div class="toolbox-cont">
+        <div class="toolbox-priority-cont">
+            <div class="color lightpink"></div>
+            <div class="color blue"></div>
+            <div class="color green"></div>
+            <div class="color black"></div>
         </div>
-        <button type="button" onclick="searchCity()" class="btn btn-lg btn-dark">Search</button>
-        <div id="weather-output" class="mt-3">
-          <div class="card-deck mb-3 text-center">
-              <div class="card mb-4 shadow-sm">
-                <div class="card-header">
-                  <h4 id="city-name" class="my-0 font-weight-normal">----</h4>
-                </div>
-                <div class="card-body">
-                  <h1 id="weather-type" class="card-title">----</h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>Temp: <span id="temp">--</span>°</li>
-                    <li>Min Temp: <span id="min-temp">--</span>°</li>
-                    <li>Max Temp: <span id="max-temp">--</span>°</li>
-                  </ul>
-                </div>
-              </div>
-          </div>
+        <div class="action-btn-cont">
+            <div class="add-btn">
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="remove-btn">
+                <i class="fa fa-trash"></i>
+            </div>
         </div>
-    </main>
+    </div>
+
+
+    <div class="main-cont">
+        
+
+       
+
+    </div>
+
+
+    <div class="modal-cont">
+        <textarea class="textarea-cont" placeholder="Enter Your Task"></textarea>
+        
+        <div class="priority-color-cont">
+            <div class="lightpink priority-color"></div>
+            <div class="blue priority-color"></div>
+            <div class="green priority-color"></div>
+            <div class="black priority-color active"></div>
+        </div>
+    </div>
+
+
+
+    
 </body>
+<script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+<script src="./script.js"></script>
 </html>
